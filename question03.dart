@@ -2,3 +2,5 @@
 // Example:
 // Input: 17
 // Output: 17 is a prime number
+
+void main() {}
