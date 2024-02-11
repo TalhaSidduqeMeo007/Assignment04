@@ -8,8 +8,12 @@
 
 
 void main() {
-  var number = [];
-  for (int i = 1; i <= 4; i++) {
-    number  .add(i);
+  const int rows = 4;
+
+  for (int i = 1; i <= rows; i++) {
+    for (int j = 1; j <= i; j++) {
+      print("$i ");
+    }
+    print("");
   }
 }

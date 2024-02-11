@@ -11,8 +11,6 @@ void main() {
   for (var i = 0; i < numbers.length; i++) {
     if (numbers[i] > largestNumber[0]) {
       largestNumber = [numbers[i]];
-    // } else if (numbers[i] == largestNumber[0]) {
-    //   largestNumber.add(numbers[i]);
     }
   }
   print('largestnumber is $largestNumber');

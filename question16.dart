@@ -3,3 +3,10 @@
 //  * * 
 //  * * * 
 // * * * *
+
+void main() {
+   var rows = 5;
+  for (var i = 0; i < rows; i++) {
+    print(' ' * (rows - i) + '* ' * i);
+  }
+}

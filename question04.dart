@@ -3,6 +3,16 @@
 // Example:
 // Input: 5
 // Output: Factorial of 5 is 120
-void main(){
-  
+
+
+void main() {
+  int num = 5; 
+  int factorial = 1;
+
+  while (num >= 1) {
+    factorial *= num;
+    num--;
+  }
+
+  print('Factorial of 5 is $factorial');
 }

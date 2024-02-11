@@ -3,9 +3,12 @@
 // Input: "radar"
 // Output: "radar" is a palindrome
 
-
 void main() {
-  String name  = "radar";
-  print('$name is a palindrome {$name is : is not }  $name is not palindrome');
-
+  String name = "radar";
+  if (name == 'radar') {
+    print("radar is a palindrome");
+  } else
+    () {
+      print("radar is not a palindrome");
+    };
 }
