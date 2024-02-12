@@ -10,8 +10,7 @@
 
 
 void main() {
-  int n = 5; // Set the desired number of terms here
-
+  int n = 5; 
   for (int i = 1; i <= n; i++) {
     int cube = i * i * i;
     print('Number is: $i and cube of $i is: $cube');
