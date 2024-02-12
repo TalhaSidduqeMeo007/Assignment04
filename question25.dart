@@ -5,16 +5,29 @@
 // Output: [7, 13, 19, 31]
 
 void main() {
-  var number = [4, 7, 10, 13, 16, 19, 22, 25, 28, 31];
-  var prime = [];
-  for (var i = 1; i < number.length; i++) {
-    for (var j = 2; j <= number[i] ; j++) {
-      if (number[i] % j != 0) {
-        
-      } else {
-        prime.add(number[i]);
-      }
+  List<int> inputList = [4, 7, 10, 13, 16, 19, 22, 25, 28, 31];
+  List<int> primeNumbers = [];
+
+  for (int num in inputList) {
+    if (isPrime(num)) {
+      primeNumbers.add(num);
     }
   }
-  print(prime);
+
+  print("Input list: $inputList");
+  print("Prime numbers: $primeNumbers");
+}
+
+bool isPrime(int num) {
+  if (num <= 1) {
+    return false;
+  }
+
+  for (int i = 2; i <= num ~/ 2; i++) {
+    if (num % i == 0) {
+      return false;
+    }
+  }
+
+  return true;
 }
